@@ -1,0 +1,11 @@
+
+  144  apt install apache2 mysql-server
+  194  sudo apt install php libapache2-mod-php php-mysql
+  195  php -v
+  196  sudo nano /etc/apache2/mods-enabled/dir.conf
+  197  sudo systemctl restart apache2
+  198  sudo systemctl status apache2
+  199  sudo apt install php-cli
+  201  sudo chown -R $USER:$USER /var/www/html/user\ examples/
+  206  chmod 755 uploads/
+  207  history
