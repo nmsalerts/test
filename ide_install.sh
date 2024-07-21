@@ -36,3 +36,4 @@ python3 --version
 pip3 --version
 
 echo "Installation of Visual Studio Code, PyCharm, Thonny, Python, and pip completed successfully."
+

@@ -3,53 +3,59 @@
 # Update and upgrade system packages
 sudo apt update && sudo apt upgrade -y
 
-# Install MySQL Server
-echo "Installing MySQL Server..."
-sudo apt install -y mysql-server
-sudo systemctl start mysql
-sudo systemctl enable mysql
+# Install Git
+echo "Installing Git..."
+sudo apt install -y git
 
-# Secure MySQL Installation
-echo "Securing MySQL Installation..."
-sudo mysql_secure_installation <<EOF
+# Install Docker
+echo "Installing Docker..."
+sudo apt install -y docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
 
-Y
-password
-password
-Y
-Y
-Y
-Y
-EOF
+# Install VirtualBox
+echo "Installing VirtualBox..."
+sudo apt install -y virtualbox
 
 # Install MySQL Workbench
 echo "Installing MySQL Workbench..."
 sudo apt install -y mysql-workbench
 
-# Install MongoDB
-echo "Installing MongoDB..."
+# Install pgAdmin
+echo "Installing pgAdmin..."
+sudo apt install -y pgadmin4
+
+# Install MongoDB Compass
+echo "Installing MongoDB Compass..."
 wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 sudo apt update
-sudo apt install -y mongodb-org
-sudo systemctl start mongod
-sudo systemctl enable mongod
+sudo apt install -y mongodb-compass
 
-# Install Node.js and NPM
-echo "Installing Node.js and NPM..."
-sudo apt install -y nodejs npm
+# Install Postman
+echo "Installing Postman..."
+sudo snap install postman
 
-# Install Mongoose
-echo "Installing Mongoose..."
-npm install -g mongoose
+# Install Jupyter Notebook
+echo "Installing Jupyter Notebook..."
+sudo apt install -y python3-pip
+pip3 install jupyter
+
+# Install Vagrant
+echo "Installing Vagrant..."
+sudo apt install -y vagrant
 
 # Verify installations
 echo "Verifying installations..."
-mysql --version
+git --version
+docker --version
+virtualbox --version
 mysql-workbench --version
-mongod --version
-node --version
-npm --version
-npm list -g mongoose
+pgadmin4 --version
+mongodb-compass --version
+postman --version
+jupyter --version
+vagrant --version
 
-echo "Installation of MySQL, MySQL Workbench, MongoDB, and Mongoose completed successfully."
+echo "Installation of additional useful software completed successfully."
+

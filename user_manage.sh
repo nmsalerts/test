@@ -59,3 +59,4 @@ case "$1" in
         echo "Usage: $0 {add|delete|cleanup} ..."
         ;;
 esac
+

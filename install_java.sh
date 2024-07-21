@@ -21,3 +21,4 @@ echo "Verifying IntelliJ IDEA installation..."
 snap list intellij-idea-community
 
 echo "Installation of Java JDK, JRE, and IntelliJ IDEA completed successfully."
+
