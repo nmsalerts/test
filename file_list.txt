@@ -1,0 +1,32 @@
+/var/www/html/example2/display_users.php
+/var/www/html/example2/index.html
+/var/www/html/example2/submit_user.php
+/var/www/html/example2/uploads/467cf9824f95372156aed02e6dfe1c06.png
+/var/www/html/gen_file_list.php
+/var/www/html/generate_file_list.php
+/var/www/html/index.html
+/var/www/html/test.php
+/var/www/html/twitter/index.php
+/var/www/html/upimg/index.php
+/var/www/html/upimg/upload.php
+/var/www/html/upimg/uploads/24-hour-clock-face.gif
+/var/www/html/upimg/uploads/467cf9824f95372156aed02e6dfe1c06.png
+/var/www/html/upimg/uploads/IMG_20191013_114503ky.jpg
+/var/www/html/upimg/uploads/ajithraj.jpg
+/var/www/html/upimg/uploads/iot security.PNG
+/var/www/html/upimg/uploads/junga.jpg
+/var/www/html/upimg/uploads/sign.png
+/var/www/html/upimg/view.php
+/var/www/html/upload/index.php
+/var/www/html/upload/upload.php
+/var/www/html/upload/uploads/4.HSC MARK SHEET.pdf
+/var/www/html/upload/uploads/B. Tech-2.pdf
+/var/www/html/upload/uploads/B.Tech.pdf
+/var/www/html/upload/view.php
+/var/www/html/user examples/index.php
+/var/www/html/user examples/list.php
+/var/www/html/user examples/submit.php
+/var/www/html/user examples/uploads/jpg_44-2.jpg
+/var/www/html/user examples/uploads/purosanguesuvrossomugello.jpg
+/var/www/html/user examples/uploads/taskalfa-3212i.jpg
+/var/www/html/user examples/user.sql
