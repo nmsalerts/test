@@ -1,0 +1,46 @@
+Test Tools and Automation- Strategies , Costs, Risks and Benefits
+Last Updated : 15 Nov, 2023
+Test tools can be very useful. Some tools are essential. For example- An incident tracking system. Generally, tools are meant to improve the efficiency and accuracy of testing. Hence, it is very important that we carefully select tools and properly implement them as well. Many times, it has been observed that a good tool also does not get properly implemented resulting in inefficiencies. Ongoing maintenance of scripts and data is also very important to reap the benefits of test tools. 
+
+Most of the time, automation is equated with test execution automation. While it is true for the most part, the other aspects of testing are also automated. 
+
+Test Automation strategies : 
+As a starting point, it should be clearly understood that a test tool is NOT equivalent to having an automation strategy. An expectation that getting a tool will solve the testing problems is not realistic. So, here are some of the important test automation strategies:
+
+Automate for the long term: It is not a good idea to automate a set of test cases that are going to be run only a couple of times. This will not give you a return on investment (ROI) concerning the cost of the tool (if it is licensed) and effort for creating the scripts.
+Automatable Tests: Automate only those tests that are automatable i.e. tests that can run unattended and human judgment is NOT required to interpret test results.
+Error-Free Tests: Automate the error-prone tests if done manually- for Example, data load, and regression tests.
+Automate Business Tests: Only automate tests that have a valid business case i.e. you should have an idea of how many times a test will be required to run between automation and till the application under test retires. If the test case is a one-off scenario that might be run rarely and is an edge scenario, there is no point in automating.
+Multiple Browsers: Automate tests that require testing over multiple browsers/devices/OS/environment/hardware/configurations. It will give a good ROI.
+Strategy for Automation: Automation test strategies should be tailored to the project to give the best outcomes. We can have a generic strategy, but it might not give optimal or best results. We should always tailor the strategy for automation.
+Possible Manual Testing: Automate tests where manual testing is impossible. Example — Performance tests.
+Automate tests that are maintainable over time: Many times, test automation is created and is successful for few runs only, and over time as the UI layout changes, the test needs to change. However, due to various reasons, tests are not updated or the new team might not understand where to make the change. Hence, the script should be modular and easily understandable to make it maintainable.
+Test automation Costs :
+In any task, we need to identify costs, risks, and benefits. When it comes to costs- We can divide them in terms of initial costs and recurring costs. Initial costs for automation include- 
+
+Fees for Tool Licensing: Purchasing licenses for the chosen test automation tools are frequently included in the initial cost. The features of the product, the quantity of users, and the vendor’s quality of support all affect authorization costs.
+Training and Orientation: Teaching team members how to efficiently use the chosen test automation tools is a part of the initial costs. To make sure that everyone on the team is skilled at using the tools, this could involve seminars, training sessions, or employing outside trainers.
+Configuring and Setting Up Tools: Configuring the test automation environment, linking the tools with other systems, and building the first test infrastructure are all part of the initial setup expenditures.
+Setup of Infrastructure: Infrastructure expenses involve purchasing servers, virtual servers, or cloud resources as well as configuring the hardware and software infrastructures needed for test automation.
+Recurring costs :
+
+Training and Maintaining Skills: To keep the team’s abilities current, regular instructions may be required when tools change and new features are added.
+Maintaining up and Support: Maintaining the efficacy of the test automation package requires regular maintenance. Updates, fixes, and continuous support from the tool manufacturer are examples of recurring expenses.
+Infrastructure Maintenance: Recurring expenditures may be associated with physical infrastructure or cloud services needed for test automation. This covers the costs of maintaining and infrastructure scalability as the project develops.
+Tool Updating: Certain tools issue updates with new features or enhancements. Depending on the tool’s pricing structure, upgrading to subsequent versions may lead to recurring costs.
+It is always a good idea to do a POC before finalizing a tool. However, Please note that recurring costs are generally missed while doing POCs. Hence, be cautious if the cost is a driving factor in deciding a tool for your project/organization. 
+
+Test Automation Risks : 
+
+Unrealistic expectation –
+The first and foremost risk is Unrealistic expectations from the tool. This is fairly common, especially in projects and organizations where there is limited prior automation experience. Test tools do not make a difficult test problem into an easy one.
+Underestimating time, cost, and effort required to introduce the tool – 
+There is always a sizable effort required to build test frameworks, integrate them with other tools, and plan and train people who are going to use the tool.
+Underestimating time and effort needed to achieve a positive return on automation – 
+A positive return on investment of automation means reduced overall test effort, reduced test execution period, and increased coverage. it may take years for an organization to have positive returns on automation.
+Vendor issues – 
+Like the inability to provide technical support and, the inability to update the automation tools with changes in the software testing platform, a free tool is licensed over time.
+Underestimating the need for manual testing-  
+As automation experts, we should understand that not all tests can be automated. Hence, there is going to be an ongoing manual effort in general. Also, with the repetitive automated tests, we might end up having the issue called “Pesticide Paradox” where we do not find any new issues. Hence, we should have a careful mix of manual testers and automation.
+Maintainability of test scripts and data – 
+You could produce brittle, hard-to-maintain scripts and frameworks. This is a major blunder that organizations and projects make and later suffer from as they are not able to get a return on automation investment. Hence, we should carefully design maintainable, robust, and modular frameworks such that test scripts and data can be reused and reduce the risk of lack of maintainability of scripts.
