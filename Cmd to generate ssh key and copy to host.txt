@@ -1,0 +1,59 @@
+cat ~/.ssh/id_rsa.pub | ssh <username>@<IP adress&remote_host> "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
+
+#https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04
+
+
+1.  Step 1 — Creating the Key Pair
+
+$ ssh-keygen
+
+2. Step 2 — Copying the Public Key to Your Ubuntu Server
+
+ $  ssh-copy-id username@remote_host+
+
+$ cat ~/.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
+
+
+
+Step 4 — Disabling Password Authentication on Your Server
+
+
+$ sudo nano /etc/ssh/sshd_config
+
+sudo systemctl restart ssh
+
+fping -s -g 10.23.101.1 10.23.105.255
+
+Fping site: https://www.tecmint.com/ping-multiple-linux-hosts-using-fping/
+
+
+
+
+
+
+
+Simple examples
+
+
+1. vnstat- https://www.geeksforgeeks.org/vnstat-command-in-linux-with-examples/
+
+2. Tcp dump- https://danielmiessler.com/p/tcpdump/
+2.1 https://www.tcpdump.org/index.html#documentation
+
+
+
+
+
+
+
+
+Ryu controller
+
+1. https://ryu.readthedocs.io/en/latest/getting_started.html
+2. https://ryu.readthedocs.io/en/latest/writing_ryu_app.html
+
+
+
+
+
+

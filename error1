@@ -1,0 +1,18 @@
+error1 :bash: ./new_system_creation.sh: /bin/bash^M: bad interpreter: No such file or directory
+
+
+solution: https://stackoverflow.com/questions/14219092/bash-script-bin-bashm-bad-interpreter-no-such-file-or-directory
+
+erro2 : No sshpass 
+
+Solution2: apt install sshpass
+
+3. sshfs
+ 
+
+
+https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh
+
+4. https://phoenixnap.com/kb/sshfs
+
+5.https://www.geeksforgeeks.org/how-to-use-sshfs-on-linux/
