@@ -29,7 +29,7 @@ validate_password() {
     fi
 
     # Check for at least one special character
-    if ! [[ $password =~ [\@\#\$\%\^\&\*\(\)\_\+\!\~\-\=\[\]\{\}\;\:\'\"\,\.\<\>\?\/\|\\\`] ]]; then
+    if [ `echo $password | grep -c -E "[@#$%&*+-=]+"` -eq 0 ]; then
         echo "Password must contain at least one special character."
         return 1
     fi
