@@ -1,6 +1,5 @@
 #!/bin/bash
-# Backs up all files in current directory modified within last 24 hours
-# in a "tarball" (tarred and gzipped file).
+
 NOARGS=0
 E_BADARGS=65
 if [ $# = $NOARGS ]

@@ -79,7 +79,7 @@ function connect_wifi() {
 	WPA_PASS=$2
 	bash -c 'wpa_passphrase $ESSID $WPA_PASS >> /etc/wpa_supplicant/wpa_supplicant.conf'
 	wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
-
+}
 function aircrack_wpa() {
 	#TODO: add aircrack capability
 	pcap=$1
