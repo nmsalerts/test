@@ -1,11 +1,11 @@
-def is_prime(num):  # Function to check if a number is prime
-    if num <= 1:  # 1 or below is not prime
+def is_prime(num):
+    if num <= 1: 
         return False
-    for i in range(2, int(num**0.5) + 1):  # Check divisors up to square root of number
-        if num % i == 0:  # If divisible, it's not prime
+    for i in range(2, int(num**0.5) + 1):  
+        if num % i == 0:  
             return False
-    return True  # If no divisors found, it's prime
+    return True 
 
 num = int(input("Number:"))
 
-print(is_prime(num))  # Example usage
+print(is_prime(num)) 
